@@ -30,7 +30,8 @@ claude.message("Question", model="opus", system="Tu es un expert")
 
 ### Git
 - Commit: `09f9458 Initial commit - Claude Virtual API v1.0.0`
-- 11 fichiers, 1113 lignes
+- Commit: `4122448 Add README with documentation`
+- 12 fichiers, 1231 lignes
 - **GitHub** : https://github.com/patrick-oliveira-ch/claude-virtual-api
 - Push : OK (branche master)
 

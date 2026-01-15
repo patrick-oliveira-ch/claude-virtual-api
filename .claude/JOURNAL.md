@@ -1,5 +1,39 @@
 # Journal de Développement - Claude Virtual API
 
+## Session 2026-01-15 21:15
+
+### Objectif
+Ajout client Python et commit initial
+
+### Actions
+- Tests multiples du serveur (calcul, haiku, system prompt)
+- Création du client Python (`client.py`)
+- Création du `setup.py` pour installation pip
+- Installation en mode editable (`pip install -e .`)
+- Ajout `.gitignore`
+- Initialisation git et commit
+
+### Client Python
+```python
+from client import claude
+
+# Simple
+reponse = claude.message("Salut!")
+
+# Streaming
+for chunk in claude.message_stream("Raconte"):
+    print(chunk, end="")
+
+# Avec options
+claude.message("Question", model="opus", system="Tu es un expert")
+```
+
+### Git
+- Commit: `09f9458 Initial commit - Claude Virtual API v1.0.0`
+- 11 fichiers, 1113 lignes
+
+---
+
 ## Session 2026-01-15 21:00
 
 ### Objectif
